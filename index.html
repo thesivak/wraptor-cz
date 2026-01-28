@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wraptor.cz | Na prodej</title>
+  <meta name="description" content="Prémiová doména wraptor.cz je na prodej. Kontaktujte nás pro nabídku.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0f172a;
+      --paper: #faf9f7;
+      --gold: #c9a227;
+      --gold-dark: #a68419;
+      --muted: #64748b;
+    }
+    
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+    
+    .container {
+      max-width: 600px;
+      animation: fadeUp 0.8s ease-out;
+    }
+    
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.5rem 1rem;
+      border-radius: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2.5rem, 8vw, 4rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+    
+    .domain {
+      color: var(--gold);
+    }
+    
+    .description {
+      color: var(--muted);
+      font-size: 1.125rem;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      background: var(--ink);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.125rem;
+      padding: 1rem 2rem;
+      border-radius: 1rem;
+      transition: all 0.3s ease;
+    }
+    
+    .cta:hover {
+      background: var(--gold);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(201, 162, 39, 0.3);
+    }
+    
+    .cta svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    
+    .footer {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
+    
+    .footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+    
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+      margin: 2rem auto;
+      border-radius: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <span class="badge">Na prodej</span>
+    
+    <h1>
+      <span class="domain">wraptor.cz</span>
+    </h1>
+    
+    <p class="description">
+      Skvělá pro car wrapping studio, branding agenturu nebo creative business. Unikátní a zapamatovatelná.
+    </p>
+    
+    <a href="mailto:domeny@domenymarket.cz?subject=Zájem o doménu wraptor.cz" class="cta">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+      </svg>
+      Mám zájem
+    </a>
+    
+    <div class="divider"></div>
+    
+    <p class="footer">
+      Více domén na <a href="http://domenymarket.cz">domenymarket.cz</a>
+    </p>
+  </div>
+</body>
+</html>
